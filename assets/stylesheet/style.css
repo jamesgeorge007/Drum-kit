@@ -1,3 +1,13 @@
+@keyframes zoomIn {
+  from{
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 *{
   margin: none;
   padding: none;
@@ -33,4 +43,52 @@ button kbd{
 .btn-tapped{
   border: 4px solid #ffd700;
   transform: scale(1.1);
+}
+.pop-up{
+  display: block;
+  width: 70vw;
+  margin: 30vh auto;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: rgba(222, 222, 222, 0.7);
+  text-align: center;
+  animation-name: zoomIn;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+.pop-up h1{
+  font-size: 1.6em;
+}
+.pop-up p{
+  font-size: 2em;
+}
+.pop-up button{
+  font-size: 1.6em;
+  background-color: royalblue;
+}
+.message-container{
+  display: none;
+}
+
+@media screen and (max-width: 1200px){
+  .wrapper, .pop-up{
+    display: none;
+  }
+  .message-container{
+    display: block;
+    width: 80vw;
+    margin: 30vh auto;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: rgba(222, 222, 222, 0.7);
+    text-align: center;
+    animation-name: zoomIn;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+  }
+  .message-container p{
+    font-size: 5vw;
+  }
 }
