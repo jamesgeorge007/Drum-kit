@@ -17,17 +17,20 @@ button{
   font-family: Helvetica, sans-serif;
   width: 10vw;
   padding: 8px;
-  border: 4px solid #000;
+  border: 4px solid #efefef;
   border-radius: 8px;
-  box-shadow: 0 0 11px #333;
   margin: 4px;
   background-color: rgba(82, 82, 82, 0.3);
 }
 button span{
   font-size: 1.2em;
-  color: #fafad2;
+  color: #fdfed2;
 }
 button kbd{
   font-size: 3.4em;
   color: #fff;
+}
+.btn-tapped{
+  border: 4px solid #ffd700;
+  transform: scale(1.1);
 }
