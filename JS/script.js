@@ -8,8 +8,19 @@ let index
 window.onload = () => {
   /* wrapper.classList = 'wrapper display-none'
   popUp.classList = 'pop-up display-block' */
+  if(window.innerWidth >= 1200){
   wrapper.style.display = 'none'
   popUp.style.display = 'block'
+  }
+  window.addEventListener('resize', () => {
+     if (window.matchMedia('(max-width: 1200px)').matches) {
+         wrapper.style.display = 'none'
+         popUp.style.display = 'none'
+     } else{
+       wrapper.style.display = 'none'
+       popUp.style.display = 'block'
+     }
+ })
 }
 confirmBtn.addEventListener('click', () => {
 /*  wrapper.classList = 'wrapper display-block'
