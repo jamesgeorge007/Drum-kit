@@ -105,6 +105,10 @@ button kbd{
 } */
 
 @media screen and (max-width: 1200px){
+  body{
+    background: none;
+    background-color: #2e2e2e;
+  }
   .wrapper, .pop-up{
     display: none;
   }
