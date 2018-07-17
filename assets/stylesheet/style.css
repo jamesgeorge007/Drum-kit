@@ -56,15 +56,16 @@ button kbd{
 }
 .pop-up{
   display: block;
+  position: relative;
   width: 70vw;
   margin: 30vh auto;
   border-radius: 8px;
   border: 3px solid #fff;
   padding: 16px;
   box-shadow: 2px 3px 8px #333;
-  background-color: rgba(242, 242, 242, 0.8);
+  background-color: rgba(255, 255, 255);
   text-align: center;
-  z-index: 2;
+  z-index: 1;
   animation-name: zoomIn;
   animation-duration: 0.6s;
   animation-iteration-count: 1;
@@ -76,7 +77,7 @@ button kbd{
 }
 .pop-up p{
   font-size: 2em;
-  text-align: justify;
+  text-align: center;
 }
 .pop-up button{
   font-size: 1.6em;
